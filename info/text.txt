@@ -1,0 +1,57 @@
+<div class="plan__block plan">
+                <div class="slide _active slide0">
+                    <img src="img/main/plan/bg.png" alt="bg" class="_ibg img__bg">
+                    <img src="img/main/plan/line.svg" alt="line" class="_ibg img__line">
+                    <div class="plan__container">
+                        <span class="plan__subtitle subtitle">PLAN YOUR LIFE</span>
+                        <h1 class="plan__title">Increase your <span>productivity</span></h1>
+                        <p class="plan__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
+                            gubergren similique est
+                            cu. Et vel modus congue vituperata.</p>
+                        <a href="#" class="plan__link">
+                            <img src="img/main/plan/triangle.svg" alt="triangle">
+                        </a>
+                    </div>
+                    <img src="img/main/plan/decor/01.svg" alt="decor" class="decor decor__1">
+                    <img src="img/main/plan/decor/02.svg" alt="decor" class="decor decor__2">
+                    <img src="img/main/plan/decor/03.svg" alt="decor" class="decor decor__3">
+                </div>
+                <div class="slide slide1">
+                    <img src="img/main/plan/bg.png" alt="bg" class="_ibg img__bg">
+                    <img src="img/main/plan/line.svg" alt="line" class="_ibg img__line">
+                    <div class="plan__container">
+                        <span class="plan__subtitle">PLAN YOUR LIFE</span>
+                        <h1 class="plan__title">Integrate your <span>tools</span></h1>
+                        <p class="plan__text">Runn has a full API available for building custom integrations, as well as standard integrations with tools such as
+                        Harvest, WorkflowMax, Clockify and more.</p>
+                        <a href="#" class="plan__link">
+                            <img src="img/main/plan/triangle.svg" alt="triangle">
+                        </a>
+                    </div>
+                    <img src="img/main/plan/decor/01.svg" alt="decor" class="decor decor__1">
+                    <img src="img/main/plan/decor/02.svg" alt="decor" class="decor decor__2">
+                    <img src="img/main/plan/decor/03.svg" alt="decor" class="decor decor__3">
+                </div>
+                <div class="slide slide2">
+                    <img src="img/main/plan/bg.png" alt="bg" class="_ibg img__bg">
+                    <img src="img/main/plan/line.svg" alt="line" class="_ibg img__line">
+                    <div class="plan__container">
+                        <span class="plan__subtitle">PLAN YOUR LIFE</span>
+                        <h1 class="plan__title">Know your <span>business</span></h1>
+                        <p class="plan__text">Which roles are most profitable?
+                        What are the hidden costs of that project?
+                        Instantly drill into the numbers that matter.
+                        Learn more about project forecasting</p>
+                        <a href="#" class="plan__link">
+                            <img src="img/main/plan/triangle.svg" alt="triangle">
+                        </a>
+                    </div>
+                    <img src="img/main/plan/decor/01.svg" alt="decor" class="decor decor__1">
+                    <img src="img/main/plan/decor/02.svg" alt="decor" class="decor decor__2">
+                    <img src="img/main/plan/decor/03.svg" alt="decor" class="decor decor__3">
+                </div>
+                <div class="buttons">
+                    <span data-slide=".slide0" class="_active btn0"></span>
+                    <span data-slide=".slide1" class="btn1"></span></span>
+                    <span data-slide=".slide2" class="btn2"></span></span>
+                </div>

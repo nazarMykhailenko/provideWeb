@@ -1,0 +1,144 @@
+.quotes {
+    display: flex;
+    padding: 109px 0;
+    min-width: 0;
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+}
+
+.quotes__info {
+    margin-left: 19%;
+}
+
+.info-quotes {
+    max-width: 333px;
+}
+
+.info-quotes__subtitle {
+    &:not(:last-child) {
+        margin-bottom: 31px;
+    }
+}
+
+.swiper-pagination__quotes {
+    display: inline-block;
+    width: auto !important;
+}
+
+.info-quotes__title {
+    font-family: 'Quicksand';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #3D4F9F;
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.info-quotes__text {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.91;
+    letter-spacing: 0.03em;
+}
+
+.quotes-slide__text {
+    color: #676F95;
+    padding: 45px 70px;
+    background-color: #fff;
+    box-sizing: border-box;
+    max-width: 423px;
+}
+
+.quotes-slide__avater {
+    max-width: 423px;
+    text-align: center;
+    transform: translateY(-50%);
+    margin-bottom: 47px;
+    img {
+        max-width: 100%;
+    }
+}
+
+.slider__box {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 700px;
+    width: auto;
+    overflow: hidden;
+}
+
+@media (max-width:991.98px) {
+    .quotes-slide__text {
+        padding: 30px 55px;
+        max-width: 323px;
+        font-size: 13px;
+    }
+    .quotes-slide__avater {
+        max-width: 323px;
+        img {
+            width: 42px;
+            height: 42px;
+        }
+    }
+    .quotes {
+        padding: 81px 0;
+    }
+}
+
+@media (max-width:767.98px) {
+    .quotes {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .swiper-pagination__quotes {
+        margin-left: 19%; 
+    }
+    .quotes-slide__text,
+    .quotes-slide__avater
+     {
+        margin-left: 19%;
+    }
+    .quotes {
+        padding: 61px 0;
+    }
+}
+
+@media (min-width:767.98px) {
+    .info-quotes {
+        margin-right: 9%;
+    }
+}
+@media (max-width:450px) {
+    .quotes-slide__text {
+        padding: 20px 40px;
+        max-width: 263px;
+        font-size: 12px;
+    }
+    .quotes-slide__avater {
+        max-width: 263px;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .info-quotes__title {
+        font-size: 24px;
+    }
+    .quotes-slide__text,
+    .quotes-slide__avater {
+        margin-left: 13%;
+    }
+    .quotes__info {
+        margin-left: 13%;
+    }
+    .swiper-pagination__quotes {
+        margin-left: 13%;
+    }
+    .quotes {
+        padding: 45px 0;
+    }
+}

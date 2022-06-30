@@ -1,0 +1,139 @@
+.get-started__block {
+    position: relative;
+    box-sizing: border-box;
+    padding: 91px 0;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+
+.get-started__container {
+    max-width: 712px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.get-started__subtitle {
+    color: #fff;
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.get-started__title {
+    color: #fff;
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+    font-family: 'Quicksand';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.25;
+    span {
+        font-family: 'Quicksand';
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.25;
+        color: #fff;
+    }
+
+}
+
+.get-started__text {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.93;
+    letter-spacing: 0.03em;
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
+
+.get-started__btns {
+    display: flex;
+    justify-content: center;
+}
+
+.get-started__btn {
+    display: inline-block;
+    border: 1px solid #A0B4FF;
+    padding: 13px;
+    font-family: 'Quicksand';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.23;
+    color: #C7D3FF;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.get-started-btn_white {
+    padding: 13px 17px;
+    color: #565F82;
+    background-color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+    &:hover {
+        text-decoration: none;
+        border: 1px solid rgb(255, 247, 247);
+        background-color: rgb(255, 247, 247);
+    }
+}
+
+.get-started__decor {
+    position: absolute;
+}
+
+.get-started__decor-1 {
+    left: 3%;
+    top: 7%;
+}
+
+.get-started__decor-2 {
+    right: 6%;
+    bottom: 15%;
+}
+
+@media (max-width:767.98px) {
+    .get-started__decor-1 {
+        left: 2%;
+        top: 5%;
+    }
+
+    .get-started__decor-2 {
+        right: 4%;
+        bottom: 10%;
+    }
+
+    .get-started__title {
+        font-size: 28px;
+        span {
+            font-size: 28px;
+        }
+    }
+    .get-started__container {
+        max-width: 400px;
+    }
+    .get-started__text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:600px) {
+    .get-started__decor {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .get-started__container {
+        max-width: 300px;
+    }
+    .get-started__btn {
+        padding: 10px;
+        font-size: 11px;
+    }
+    .get-started-btn_white {
+        padding: 10px 14px;
+    }
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =========Fonts=============-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700" rel="stylesheet" />
+    <!-- -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>provideWeb</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__navigation navigation">
+                    <div class="navigation__logo">
+                        <img src="img/header/logo.svg" alt="logo">
+                    </div>
+                    <div class="navigation__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <div class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Features</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Pricing</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Documentation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navigation__social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg class="social-navigation__item" width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836 2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z" fill="#B6BAC7" />
+                            </svg>
+                        </a>
+                        <a href="https://telegram.org/" target="_blank">
+                            <svg class="social-navigation__item" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.81972 12.0232C5.38191 12.0232 5.4563 11.8651 5.3053 11.4664L4.01782 7.41344L13.9283 1.78983" fill="#9399AB" />
+                                <path d="M5.81982 12.0232C6.15768 12.0232 6.30696 11.8754 6.49554 11.7L8.29744 10.0241L6.04979 8.72772" fill="#70788E" />
+                                <path d="M6.04945 8.72806L11.4957 12.5768C12.1172 12.9048 12.5657 12.735 12.7205 12.0249L14.9374 2.03246C15.1644 1.16206 14.5906 0.76729 13.996 1.02547L0.978404 5.82666C0.0898302 6.16756 0.0950105 6.64173 0.816436 6.85301L4.15705 7.85032L11.8909 3.18335C12.256 2.97158 12.5911 3.08543 12.3161 3.31891" fill="#B6BAC7" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <svg class="social-navigation__item" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0328 1.84041C16.4253 2.11761 15.7726 2.30417 15.0877 2.38898C15.7868 1.95807 16.3239 1.27594 16.5767 0.46342C15.9222 0.862259 15.1973 1.15191 14.4257 1.308C13.8081 0.631966 12.9276 0.210602 11.9535 0.210602C10.0832 0.210602 8.56631 1.76886 8.56631 3.69017C8.56631 3.96313 8.59598 4.22867 8.65402 4.48334C5.83853 4.33759 3.3424 2.95159 1.67204 0.847419C1.38053 1.36154 1.2135 1.95887 1.2135 2.59648C1.2135 3.80359 1.81147 4.86853 2.72005 5.49303C2.16541 5.47448 1.64276 5.31812 1.18615 5.05709V5.10081C1.18615 6.7876 2.35476 8.19347 3.90258 8.51347C3.61882 8.59297 3.31957 8.63537 3.01181 8.63537C2.79357 8.63537 2.581 8.61417 2.37462 8.57309C2.80543 9.95591 4.05659 10.9619 5.53864 10.99C4.37931 11.9228 2.91868 12.4793 1.33113 12.4793C1.05768 12.4793 0.788618 12.4634 0.523682 12.4308C2.02249 13.4183 3.80327 13.9944 5.71599 13.9944C11.946 13.9944 15.3531 8.69155 15.3531 4.09365C15.3531 3.94259 15.3498 3.79286 15.3433 3.64313C16.0053 3.15286 16.5798 2.53937 17.0338 1.84107" fill="#B6BAC7" />
+                            </svg>
+                        </a>
+                        <a href="https://medium.com/" target="_blank">
+                            <svg class="social-navigation__item" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0001 2.10651H16.3472C16.1047 2.10651 15.7619 2.45072 15.7619 2.67109V10.6583C15.7619 10.8789 16.1047 11.1796 16.3472 11.1796H17.0001V13.0755H11.084V11.1796H12.3223V2.78361H12.2616L9.36999 13.0755H7.13129L4.277 2.78361H4.20477V11.1796H5.44303V13.0755H0.48999V11.1796H1.12422C1.38542 11.1796 1.72825 10.8789 1.72825 10.6583V2.67109C1.72825 2.45072 1.38542 2.10651 1.12422 2.10651H0.48999V0.210635H6.68355L8.717 7.65871H8.77295L10.8252 0.210635H17.0001V2.10651Z" fill="#757E9A" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="navigation__btn">
+                        <a href="#" class="btn">Get started</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="swiper plan__block plan">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/main/plan/bg.png" alt="bg" class="_ibg img__bg">
+                        <img src="img/main/plan/line.svg" alt="line" class="_ibg img__line">
+                        <div class="plan__container">
+                            <span class="plan__subtitle subtitle">PLAN YOUR LIFE</span>
+                            <h1 class="plan__title">Increase your <span>productivity</span></h1>
+                            <p class="plan__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+                                insolens
+                                gubergren similique est
+                                cu. Et vel modus congue vituperata.</p>
+                            <a href="#" class="plan__link">
+                                <img src="img/main/plan/triangle.svg" alt="triangle">
+                            </a>
+                        </div>
+                        <img src="img/main/plan/decor/01.svg" alt="decor" class="decor decor__1">
+                        <img src="img/main/plan/decor/02.svg" alt="decor" class="decor decor__2">
+                        <img src="img/main/plan/decor/03.svg" alt="decor" class="decor decor__3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main/plan/bg.png" alt="bg" class="_ibg img__bg">
+                        <img src="img/main/plan/line.svg" alt="line" class="_ibg img__line">
+                        <div class="plan__container">
+                            <span class="plan__subtitle subtitle">PLAN YOUR LIFE</span>
+                            <h1 class="plan__title">Know your <span>business</span></h1>
+                            <p class="plan__text">Which roles are most profitable?
+                            What are the hidden costs of that project?
+                            Instantly drill into the numbers that matter.
+                            Learn more about project forecasting</p>
+                            <a href="#" class="plan__link">
+                                <img src="img/main/plan/triangle.svg" alt="triangle">
+                            </a>
+                        </div>
+                        <img src="img/main/plan/decor/01.svg" alt="decor" class="decor decor__1">
+                        <img src="img/main/plan/decor/02.svg" alt="decor" class="decor decor__2">
+                        <img src="img/main/plan/decor/03.svg" alt="decor" class="decor decor__3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main/plan/bg.png" alt="bg" class="_ibg img__bg">
+                        <img src="img/main/plan/line.svg" alt="line" class="_ibg img__line">
+                        <div class="plan__container">
+                            <span class="plan__subtitle subtitle">PLAN YOUR LIFE</span>
+                            <h1 class="plan__title">Integrate your <span>tools</span></h1>
+                            <p class="plan__text">Runn has a full API available for building custom integrations, as well as standard
+                            integrations with tools such as
+                            Harvest, WorkflowMax, Clockify and more..</p>
+                            <a href="#" class="plan__link">
+                                <img src="img/main/plan/triangle.svg" alt="triangle">
+                            </a>
+                        </div>
+                        <img src="img/main/plan/decor/01.svg" alt="decor" class="decor decor__1">
+                        <img src="img/main/plan/decor/02.svg" alt="decor" class="decor decor__2">
+                        <img src="img/main/plan/decor/03.svg" alt="decor" class="decor decor__3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="brands__block brands">
+                <div class="brands__container">
+                    <div class="brands__items">
+                        <div class="brand__item">
+                            <img src="img/main/brands/bitbucket.png" alt="bitbucket">
+                        </div>
+                        <div class="brand__item">
+                            <img src="img/main/brands/apple.png" alt="apple">
+                        </div>
+                        <div class="brand__item">
+                            <img src="img/main/brands/facebook.png" alt="facebook">
+                        </div>
+                        <div class="brand__item">
+                            <img src="img/main/brands/atlassian.png" alt="atlassian">
+                        </div>
+                        <div class="brand__item">
+                            <img src="img/main/brands/audi.png" alt="audi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apps__block apps">
+                <div class="apps__container">
+                    <div class="apps__items">
+                        <div class="apps__content">
+                            <span class="apps__subtitle subtitle">DESKTOP AND MOBILE APP</span>
+                            <h2 class="apps__title">Plan <span>and</span> manage</h2>
+                            <p class="apps__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est
+                            cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
+                            <div class="apps__btns">
+                                <a href="" class="apps__btn _blue">View video <img src="img/main/apps/triangle.svg" alt=""></a><a href="" class="apps__btn">See features</a>
+                            </div>
+                        </div>
+                        <div class="apps__img">
+                            <img src="img/main/apps/website.png" alt="apps_img">
+                        </div>
+                    </div>
+                </div>
+                <div class="apps__decor"></div>
+            </div>
+            <div class="about__block about">
+                <div class="about__container">
+                    <div class="about__content">
+                        <p class="about__subtitle subtitle">ABOUT US</p>
+                        <h2 class="about__title title">Read about our app</h2>
+                        <div class="about__items">
+                            <div class="about__item about-item">
+                                <div class="about-item__icon">
+                                    <img src="img/main/about/icons/01.svg" alt="about__icon">
+                                </div>
+                                <h2 class="about-item__title">Overview</h2>
+                                <p class="about-item__text">
+                                    Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                                </p>
+                            </div>
+                            <div class="about__item about-item">
+                                <div class="about-item__icon">
+                                    <img src="img/main/about/icons/02.svg" alt="about__icon">
+                                </div>
+                                <h2 class="about-item__title">Files</h2>
+                                <p class="about-item__text">
+                                    No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.
+                                </p>
+                            </div>
+                            <div class="about__item about-item">
+                                <div class="about-item__icon">
+                                    <img src="img/main/about/icons/03.svg" alt="about__icon">
+                                </div>
+                                <h2 class="about-item__title">Meeting chats</h2>
+                                <p class="about-item__text">
+                                    Vim ne tacimates neglegentur. Erat diceret omittam at est.
+                                </p>
+                            </div>
+                            <div class="about__item about-item">
+                                <div class="about-item__icon">
+                                    <img src="img/main/about/icons/04.svg" alt="about__icon">
+                                </div>
+                                <h2 class="about-item__title">Save events</h2>
+                                <p class="about-item__text">
+                                    Nisl idque mel ea, nominati voluptatum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__btns">
+                            <a href="#" class="btn about__btn about-btn__red">Read more</a>
+                            <div class="or__item">
+                                <div class="line"></div>
+                                <span>OR</span>
+                                <div class="line right__line"></div>
+                            </div>
+                            <a href="#" class="about__btn btn">Get started</a>
+                        </div>
+                    </div>
+                    <img src="img/main/about/clouds/01.png" class="about__decor-1 about__decor"></img>
+                    <img src="img/main/about/clouds/02.png" class="about__decor-2 about__decor"></img>
+                    <img src="img/main/about/clouds/03.png" class="about__decor-3 about__decor"></img>
+                </div>
+            </div>
+            <div class="costumers__block costumers">
+                <div class="costumers__productivity productivity costumers__item">
+                    <div class="productivity__content costumers__content">
+                        <div class="productivity__icon costumers__icon">
+                            <img src="img/main/costumers/01.svg" alt="productivity__icon">
+                        </div>
+                        <span class="productivity__persent costumers__num">89%</span>
+                        <p class="productivity__text costumers__text">
+                            Customers who have increased their productivity
+                        </p>
+                    </div>
+                </div>
+                <div class="costumers__users users costumers__item">
+                    <div class="users__content costumers__content">
+                        <div class="users__icon costumers__icon">
+                            <img src="img/main/costumers/02.svg" alt="users__icon">
+                        </div>
+                        <span class="users__num costumers__num">3123</span>
+                        <p class="users__text costumers__text">
+                            Users who have used our application
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__block blog">
+                <div class="blog__container">
+                    <p class="blog__subtitle subtitle">OUR RESOURCES</p>
+                    <h2 class="blog__title title">Start reading our blog</h2>
+                    <div class="clickSlider__wrapper">
+                        <div class="clickSlider">
+                            <div class="prev">
+                                <i class="fa-solid fa-left-long"></i>
+                            </div>
+                            <div class="clickSlides">
+                                <div class="_active clickSlide0 clickSlide" id="clickSlide0">
+                                    <div class="blog__galery">
+                                        <a href="#" class="blog-galery__item blog-galery__item-big">
+                                            <img src="img/main/blog/galery/01.png" alt="galery__item">
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </a>
+                                        <a href="#" class="blog-galery__item">
+                                            <img src="img/main/blog/galery/02.png" alt="galery__item">
+                                        </a>
+                                        <a href="#" class="blog-galery__item galery__last-item">
+                                            <img src="img/main/blog/galery/03.png" alt="galery__item">
+                                        </a>
+                                    </div>
+                                    <div class="blog__info info-blog">
+                                        <h2 class="info-blog__title">How to start planning</h2>
+                                        <p class="info-blog__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
+                                            vero tractatos ius an, in mel
+                                            diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut
+                                            decore
+                                            ...</p>
+                                        <div class="ingo-blog__links">
+                                            <a href="#" class="info-blog__btn btn">Read now</a>
+                                            <a href="#" class="info-blog__link">Add to your bookmarks</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="clickSlide1" class="clickSlide1 clickSlide">
+                                    <div class="blog__galery">
+                                        <a class="blog-galery__item blog-galery__item-big">
+                                            <img src="img/main/blog/galery/01.png" alt="galery__item">
+                                            <span href="#"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </a>
+                                        <a class="blog-galery__item">
+                                            <img src="img/main/blog/galery/02.png" alt="galery__item">
+                                        </a>
+                                        <a class="blog-galery__item galery__last-item">
+                                            <img src="img/main/blog/galery/03.png" alt="galery__item">
+                                        </a>
+                                    </div>
+                                    <div class="blog__info info-blog">
+                                        <h2 class="info-blog__title">Adapt and accelerate</h2>
+                                        <p class="info-blog__text">Even when situations change, rapidly adjust plans on a drag-and-drop canvas so your teams are always on track.
+                                        Experience a strategic planning process that frees you up to maximize your creative thinking
+                                            ...</p>
+                                        <div class="ingo-blog__links">
+                                            <a href="#" class="info-blog__btn btn">Read now</a>
+                                            <a href="#" class="info-blog__link">Add to your bookmarks</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="clickSlide2" class="clickSlide2 clickSlide">
+                                    <div class="blog__galery">
+                                        <a class="blog-galery__item-big blog-galery__item">
+                                            <img src="img/main/blog/galery/01.png" alt="galery__item">
+                                            <span href="#"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </a>
+                                        <a class="blog-galery__item">
+                                            <img src="img/main/blog/galery/02.png" alt="galery__item">
+                                        </a>
+                                        <a class="blog-galery__item galery__last-item">
+                                            <img src="img/main/blog/galery/03.png" alt="galery__item">
+                                        </a>
+                                    </div>
+                                    <div class="blog__info info-blog">
+                                        <h2 class="info-blog__title">Plan your way</h2>
+                                        <p class="info-blog__text">You know your team the best. A strategy that works for others may not work for you. Cascade enables you to plan with no
+                                        restrictions to specific models or methodologies, unlike the other strategic planning softwares.
+                                            ...</p>
+                                        <div class="ingo-blog__links">
+                                            <a href="#" class="info-blog__btn btn">Read now</a>
+                                            <a href="#" class="info-blog__link">Add to your bookmarks</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </div>
+                        <div class="clickSlider__buttons">
+                            <div class="clickSlider__btn _active" id="clickBtn0" data-imgId="clickSlide0"></div>
+                            <div class="clickSlider__btn" id="clickBtn1" data-imgId="clickSlide1"></div>
+                            <div class="clickSlider__btn" id="clickBtn2" data-imgId="clickSlide2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quotes__block quotes">
+                <div class="quotes__info info-quotes">
+                    <p class="info-quotes__subtitle subtitle">TESTIMONIALS</p>
+                    <h2 class="info-quotes__title">Customers's quotes</h2>
+                    <p class="info-quotes__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
+                </div>
+                <div class="slider__box">
+                    <div class="swiper quotes__slider">
+                        <div class="swiper-wrapper quotes__slides">
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                            <div class="swiper-slide quotes__slide">
+                                <p class="quotes-slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
+                                    an, in mel
+                                    diceret persecuti.
+                                </p>
+                                <div class="quotes-slide__avater"><img src="img/main/quotes/avatar.png" alt="avatar"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination__quotes"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="question__block question">
+                <div class="question__container">
+                    <p class="question__subtitle subtitle">Customer help</p>
+                    <h2 class="question__title title">Frequently asked questions</h2>
+                    <div class="question__items">
+                        <div class="question__item question-item">
+                            <div class="question-item__header">
+                                <div class="question-item__icon">
+                                    <svg class="arrow-svg__question" width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L9 9L16 2" stroke="#8E96B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h2 class="question-item__title">Reque insolens in vel?</h2>
+                            </div>
+                            <div class="question-item__inner">
+                                <p class="question-item__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                </p>
+                                <a href="#" class="question-item__btn">Go to documentation</a>
+                            </div>
+                        </div>
+                        <div class="question__item question-item">
+                            <div class="question-item__header">
+                                <div class="question-item__icon">
+                                    <svg class="arrow-svg__question" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L9 9L16 2" stroke="#8E96B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h2 class="question-item__title">Vis rebum error graecis ea, id sit postea accusamus?</h2>
+                            </div>
+                            <div class="question-item__inner">
+                                <p class="question-item__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                </p>
+                                <a href="#" class="question-item__btn">Go to documentation</a>
+                            </div>
+                        </div>
+                        <div class="question__item question-item">
+                            <div class="question-item__header">
+                                <div class="question-item__icon">
+                                    <svg class="arrow-svg__question" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L9 9L16 2" stroke="#8E96B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h2 class="question-item__title">Lorem repudiandae ne nec?</h2>
+                            </div>
+                            <div class="question-item__inner">
+                                <p class="question-item__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                </p>
+                                <a href="#" class="question-item__btn">Go to documentation</a>
+                            </div>
+                        </div>
+                        <div class="question__item question-item">
+                            <div class="question-item__header">
+                                <div class="question-item__icon">
+                                    <svg class="arrow-svg__question" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L9 9L16 2" stroke="#8E96B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h2 class="question-item__title">Ad dicit numquam vel. Et eos iudico feugait percipitur?</h2>
+                            </div>
+                            <div class="question-item__inner">
+                                <p class="question-item__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                </p>
+                                <a href="#" class="question-item__btn">Go to documentation</a>
+                            </div>
+                        </div>
+                        <div class="question__item question-item">
+                            <div class="question-item__header">
+                                <div class="question-item__icon">
+                                    <svg class="arrow-svg__question" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L9 9L16 2" stroke="#8E96B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h2 class="question-item__title">Sea no dico percipitur. Fierent constituam definitiones id eum?</h2>
+                            </div>
+                            <div class="question-item__inner">
+                                <p class="question-item__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                </p>
+                                <a href="#" class="question-item__btn">Go to documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="get-started__block get-started">
+                <div class="get-started__container">
+                    <p class="get-started__subtitle subtitle">PLAN YOUR LIFE</p>
+                    <h2 class="get-started__title">Get <span>started</span> now</h2>
+                    <p class="get-started__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est
+                    cu. Et vel modus congue vituperata.</p>
+                    <div class="get-started__btns">
+                        <a href="#" class="get-started__btn get-started-btn_white">View pricing</a><a href="#" class="get-started__btn">Read documentation</a>
+                    </div>
+                </div>
+                <div class="get-started__decor get-started__decor-1">
+                    <img src="img/main/get-started/01.png" alt="decor">
+                </div>
+                <div class="get-started__decor get-started__decor-2">
+                    <img src="img/main/get-started/02.png" alt="decor">
+                </div>
+            </div>
+            <div class="sign-up__block sign-up">
+                <div class="sign-up__container">
+                    <div class="sign-up__info">
+                        <h2 class="sign-up__title">Sign up for newsletter</h2>
+                        <p class="sign-up__text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+                    </div>
+                    <form action="#" class="sign-up__form">
+                        <input placeholder="Email address" type="email" name="email" id="sign-up__email">
+                        <input type="button" value="Save me" id="sign-up__submit">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <nav class="footer__navigation navigation">
+                    <div class="navigation__logo">
+                        <img src="img/header/logo.svg" alt="logo">
+                    </div>
+                    <div class="navigation__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <div class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Features</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Pricing</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Documentation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navigation__social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg class="social-navigation__item" width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836 2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z" fill="#B6BAC7" />
+                            </svg>
+                        </a>
+                        <a href="https://telegram.org/" target="_blank">
+                            <svg class="social-navigation__item" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.81972 12.0232C5.38191 12.0232 5.4563 11.8651 5.3053 11.4664L4.01782 7.41344L13.9283 1.78983" fill="#9399AB" />
+                                <path d="M5.81982 12.0232C6.15768 12.0232 6.30696 11.8754 6.49554 11.7L8.29744 10.0241L6.04979 8.72772" fill="#70788E" />
+                                <path d="M6.04945 8.72806L11.4957 12.5768C12.1172 12.9048 12.5657 12.735 12.7205 12.0249L14.9374 2.03246C15.1644 1.16206 14.5906 0.76729 13.996 1.02547L0.978404 5.82666C0.0898302 6.16756 0.0950105 6.64173 0.816436 6.85301L4.15705 7.85032L11.8909 3.18335C12.256 2.97158 12.5911 3.08543 12.3161 3.31891" fill="#B6BAC7" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <svg class="social-navigation__item" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0328 1.84041C16.4253 2.11761 15.7726 2.30417 15.0877 2.38898C15.7868 1.95807 16.3239 1.27594 16.5767 0.46342C15.9222 0.862259 15.1973 1.15191 14.4257 1.308C13.8081 0.631966 12.9276 0.210602 11.9535 0.210602C10.0832 0.210602 8.56631 1.76886 8.56631 3.69017C8.56631 3.96313 8.59598 4.22867 8.65402 4.48334C5.83853 4.33759 3.3424 2.95159 1.67204 0.847419C1.38053 1.36154 1.2135 1.95887 1.2135 2.59648C1.2135 3.80359 1.81147 4.86853 2.72005 5.49303C2.16541 5.47448 1.64276 5.31812 1.18615 5.05709V5.10081C1.18615 6.7876 2.35476 8.19347 3.90258 8.51347C3.61882 8.59297 3.31957 8.63537 3.01181 8.63537C2.79357 8.63537 2.581 8.61417 2.37462 8.57309C2.80543 9.95591 4.05659 10.9619 5.53864 10.99C4.37931 11.9228 2.91868 12.4793 1.33113 12.4793C1.05768 12.4793 0.788618 12.4634 0.523682 12.4308C2.02249 13.4183 3.80327 13.9944 5.71599 13.9944C11.946 13.9944 15.3531 8.69155 15.3531 4.09365C15.3531 3.94259 15.3498 3.79286 15.3433 3.64313C16.0053 3.15286 16.5798 2.53937 17.0338 1.84107" fill="#B6BAC7" />
+                            </svg>
+                        </a>
+                        <a href="https://medium.com/" target="_blank">
+                            <svg class="social-navigation__item" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0001 2.10651H16.3472C16.1047 2.10651 15.7619 2.45072 15.7619 2.67109V10.6583C15.7619 10.8789 16.1047 11.1796 16.3472 11.1796H17.0001V13.0755H11.084V11.1796H12.3223V2.78361H12.2616L9.36999 13.0755H7.13129L4.277 2.78361H4.20477V11.1796H5.44303V13.0755H0.48999V11.1796H1.12422C1.38542 11.1796 1.72825 10.8789 1.72825 10.6583V2.67109C1.72825 2.45072 1.38542 2.10651 1.12422 2.10651H0.48999V0.210635H6.68355L8.717 7.65871H8.77295L10.8252 0.210635H17.0001V2.10651Z" fill="#757E9A" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="navigation__btn">
+                        <a href="#" class="btn">Get started</a>
+                    </div>
+                </nav>
+                <div class="copy">
+                    <span>Copyright © 2018 by Random site</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/f78bbe046c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
